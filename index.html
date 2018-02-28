@@ -7,70 +7,49 @@
 	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 <body>
-	<div class ="container">
-		<div class ="jumbotron">
-			<h1>The Office Triva Game!</h1>
-			<div class ="question1">
-				<p>
-					
-				</p>
-			</div>
-			<div class ="question2">
-				<p>
-					
-				</p>
-			</div>
-			<div class ="question3">
-				<p>
-					
-				</p>
-			</div>
-			<div class ="question4">
-				<p>
-					
-				</p>
-			</div>
-			<div class ="question5">
-				<p>
-					
-				</p>
-			</div>
-			<div class ="question6">
-				<p>
-					
-				</p>
-			</div>
-			<div class ="question7">
-				<p>
-					
-				</p>
-			</div>
-			<div class ="question7">
-				<p>
-					
-				</p>
-			</div>
-			<div class ="question9">
-				<p>
-					
-				</p>
-			</div>
-			<div class ="question10">
-				<p>
-					
-				</p>
-			</div>
-		<div class="row">
-			<div class="col-md-3" id="number">
-				<p id ="randomNumber"></p>
-			</div>
-			<div class="aside col-md-6">
-	    		<p id="message"></p>
-				<p>Time Remaining: <span id="Timer"></span></p>	
-			</div>
+	<div class="container">
+		<h1>"The Office" Trivia</h1>
+		<div class="page1">
+			<button type="button" class="btn btn-default btn-lg" id="start">Apply</button>
 		</div>
+		<div class="page2">
+			<h3 id="timer"></h3>
+			<form id="officeQuiz" name="officeQuiz">
+				<h3 class="question">What is Michael Scott's middle name?</h3>
+					<input type="radio" name="q1" value="gary"> Gary<br>
+  					<input type="radio" name="q1" value="eugine"> Eugine<br>
+  					<input type="radio" name="q1" value="neil"> Neil<br>
+  				<h3 class="question"> Where does the show take place?</h3>
+					<input type="radio" name="q2" value="scottdale"> Scottdale<br>
+  					<input type="radio" name="q2" value="stockdale"> Stockdale<br>
+  					<input type="radio" name="q2" value="scranton"> Scranton<br>	
+  				<h3 class="question"> Which other television show does NOT have an actor from their show guest star on "The Office"?</h3>
+					<input type="radio" name="q3" value="scrubs"> Scrubs<br>
+  					<input type="radio" name="q3" value="reno-911"> Reno 911<br>
+  					<input type="radio" name="q3" value="30-rock"> 30 Rock<br>
+  				<h3 class="question">What county in Pennsylvania is Dunder Mifflin Scranton branch located?</h3>
+					<input type="radio" name="q4" value="lycoming"> Lycoming County<br>
+  					<input type="radio" name="q4" value="cumberland"> Cumberland County<br>
+  					<input type="radio" name="q4" value="lackawanna"> Lackawanna County<br>
+  				<h3 class="question"> Where did Michael get his "World's Best Boss" mug?</h3>
+					<input type="radio" name="q5" value="hallmark"> Hallmark<br>
+  					<input type="radio" name="q5" value="spensers"> Spenser's<br>
+  					<input type="radio" name="q5" value="walmart"> Walmart<br>
+
+  				<!-- Submit button for when time doesn't run out -->
+  				<input type="button submit" class="btn btn-default btn-lg submit" id="done" value="Submit Application">
+			</form>
+			
+		</div>
+		<div class="page3">
+			<h3>Could you work at "The Office"</h3>
+			<p id="correct">Correct Answers: </p>
+			<p id="incorrect">Incorrect Answers: </p>
+			<p id="blank">Unaswered: </p>
+		</div>
+		
 	</div>
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.10.0.min.js"></script>
-	<script type="text/javascript" src="assets/javascript/game.js"></script>
+	<script type="text/javascript" src="assets/javascript/app.js"></script>
 </body>
 </html>
